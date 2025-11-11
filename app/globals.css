@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 255 255 255;
+  --fg: 23 23 23;
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  background-color: rgb(var(--bg));
+  color: rgb(var(--fg));
+}
+
+/* basit card */
+.card {
+  @apply rounded-2xl shadow-sm border border-gray-200 bg-white;
+}
+.card-header {@apply p-4 text-sm font-semibold text-gray-700;}
+.card-body {@apply p-4;}
+.btn {
+  @apply inline-flex items-center justify-center rounded-xl px-4 py-2 border border-transparent text-sm font-medium transition;
+}
+.btn-primary { @apply bg-blue-600 text-white hover:bg-blue-700; }
+.btn-ghost { @apply hover:bg-gray-100; }
+.input { @apply w-full rounded-xl border border-gray-300 px-3 py-2 outline-none focus:ring-2 focus:ring-blue-500; }
+.select { @apply w-full rounded-xl border border-gray-300 px-3 py-2 outline-none focus:ring-2 focus:ring-blue-500 bg-white; }
+.table { @apply w-full text-sm; }
+.table th { @apply text-left bg-gray-50 font-semibold p-2; }
+.table td { @apply p-2 border-t; }
