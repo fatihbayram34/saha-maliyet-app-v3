@@ -13,7 +13,7 @@ export default function Projeler(){
   return (
     <div className="space-y-4">
       <div className="flex items-center justify-between">
-        <div className="flex items-center justify-between"><h1 className="text-xl font-bold">Projeler</h1><Link className="btn btn-primary" href="/projeler/yeni">Yeni Proje</Link></div>
+        <div className="flex items-center justify-between"><h1 className="text-xl font-bold">Projeler</h1></div>
         <Link href="/projeler/yeni" className="btn btn-primary">Yeni Proje</Link>
       </div>
       <table className="table">
