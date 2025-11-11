@@ -3,7 +3,8 @@ import { useCollection } from '@/hooks/useCollection'
 import type { LedgerDoc, CatalogItem } from '@/types'
 
 import StockDocForm from '@/components/StockDocForm'
-import type { Customer, Project, CatalogItem, LedgerDoc } from '@/types'
+import type { Customer, Project} from '@/types'
+
 export default function Stok(){
   const ledger = useCollection<LedgerDoc>('inventoryLedger')
   const customers = useCollection<Customer>('customers')
