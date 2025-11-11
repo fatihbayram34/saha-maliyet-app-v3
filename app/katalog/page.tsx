@@ -1,5 +1,6 @@
 'use client'
 import { useCollection } from '@/hooks/useCollection'
+import CatalogQuickAdd from '@/components/CatalogQuickAdd'
 import type { CatalogItem } from '@/types'
 
 export default function Katalog(){
@@ -8,6 +9,7 @@ export default function Katalog(){
   return (
     <div className="space-y-4">
       <h1 className="text-xl font-bold">Katalog</h1>
+    <CatalogQuickAdd />
       <table className="table">
         <thead><tr><th>Kod</th><th>Ad</th><th>Birim</th></tr></thead>
         <tbody>
