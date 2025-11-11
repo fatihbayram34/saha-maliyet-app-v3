@@ -43,7 +43,7 @@ export default function Dashboard(){
         <div className="card"><div className="card-header">Toplam Tahsilat (Brüt)</div><div className="card-body text-2xl">{tl(toplamTahsilat)}</div></div>
         <div className="card"><div className="card-header">Toplam Anlaşma (Brüt)</div><div className="card-body text-2xl">{tl(toplamAnlasmaBrut)}</div></div>
         <div className="card"><div className="card-header">En Kârlı 5 (Net)</div><div className="card-body text-sm"><ul className="list-disc pl-4">{enKarlilar.map(x=> (<li key={x.id}>{x.ad}: {tl(x.profit)}</li>))}</ul></div></div>
-        <div className="card"><div className="card-header">En Pahalı 5 (Net Maliyet)"></div><div className="card-body text-sm"><ul className="list-disc pl-4">{enPahalilar.map(x=> (<li key={x.id}>{x.ad}: {tl(x.cost)}</li>))}</ul></div></div>
+        <div className="card"><div className="card-header">En Pahalı 5 (Net Maliyet)</div><div className="card-body text-sm"><ul className="list-disc pl-4">{enPahalilar.map(x=> (<li key={x.id}>{x.ad}: {tl(x.cost)}</li>))}</ul></div></div>
       </div>
 
       <div className="grid md:grid-cols-2 gap-4">
