@@ -18,13 +18,6 @@ export default function Dashboard(){
   // Basit durum dağılımı
   const durumCounts = ['Teklif','Devam','Beklemede','Tamamlandı','İptal'].map(d=>({name:d, value: projects.filter(p=>p.durum===d).length}))
 
-  // Dummy aylık seri (gerçek uygulamada tarih gruplaması yapılır)
-  const seri = Array.from({length:12}).map((_,i)=> ({
-    ay: `${i+1}. Ay`,
-    tahsilat: 0,
-    masraf: 0
-  }))
-
   const colors = ['#2563eb','#16a34a','#f59e0b','#ef4444','#64748b']
 
   function projCostNet(pid:string){
@@ -80,7 +73,7 @@ export default function Dashboard(){
                 <Tooltip />
               </PieChart>
             </ResponsiveContainer>
-          </div> 
+          </div>
         </div>
       </div>
     </div>
