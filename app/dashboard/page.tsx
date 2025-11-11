@@ -80,7 +80,7 @@ export default function Dashboard(){
                 <Tooltip />
               </PieChart>
             </ResponsiveContainer>
-          </div>
+          </div> 
         </div>
       </div>
     </div>
